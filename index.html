@@ -3,101 +3,238 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Music Dashboard</title>
+		<title>SoundStats Dashboard</title>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<div id="container">
 			<div id="sidebar">
 				<div class="brand">
-					<h1>Billie Eilish</h1>
-					<p>Artist Analytics</p>
+					<div class="logo-icon">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							width="24"
+							height="24"
+						>
+							<path
+								d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"
+							/>
+						</svg>
+					</div>
+					<h1>SoundStats</h1>
 				</div>
 
 				<nav class="nav">
-					<a class="nav-item active">Dashboard</a>
-					<a class="nav-item">Analytics</a>
-					<a class="nav-item">Tracks</a>
-					<a class="nav-item">Audience</a>
-					<a class="nav-item">Revenue</a>
+					<a class="nav-item active">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<rect x="3" y="3" width="7" height="7"></rect>
+							<rect x="14" y="3" width="7" height="7"></rect>
+							<rect x="14" y="14" width="7" height="7"></rect>
+							<rect x="3" y="14" width="7" height="7"></rect>
+						</svg>
+						<span>Dashboard</span>
+					</a>
+					<a class="nav-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<line x1="18" y1="20" x2="18" y2="10"></line>
+							<line x1="12" y1="20" x2="12" y2="4"></line>
+							<line x1="6" y1="20" x2="6" y2="14"></line>
+						</svg>
+						<span>Analytics</span>
+					</a>
+					<a class="nav-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path d="M9 18V5l12-2v13"></path>
+							<circle cx="6" cy="18" r="3"></circle>
+							<circle cx="18" cy="16" r="3"></circle>
+						</svg>
+						<span>Tracks</span>
+					</a>
+					<a class="nav-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+							<circle cx="9" cy="7" r="4"></circle>
+							<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+							<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+						</svg>
+						<span>Audience</span>
+					</a>
+					<a class="nav-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<line x1="12" y1="1" x2="12" y2="23"></line>
+							<path
+								d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+							></path>
+						</svg>
+						<span>Revenue</span>
+					</a>
 				</nav>
 
 				<div class="sidebar-footer">
-					<a class="nav-item">Settings</a>
-					<a class="nav-item">Help</a>
+					<a class="nav-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<circle cx="12" cy="12" r="3"></circle>
+							<path
+								d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+							></path>
+						</svg>
+						<span>Settings</span>
+					</a>
+					<a class="nav-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<circle cx="12" cy="12" r="10"></circle>
+							<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+							<line x1="12" y1="17" x2="12.01" y2="17"></line>
+						</svg>
+						<span>Help</span>
+					</a>
 				</div>
 			</div>
+
+			<!-- TOP BAR -->
 			<div id="top-bar">
-				<div class="top-bar-row top">
-					<div class="artist">
-						<img src="assets/billie.jpg" alt="Billie Eilish" />
-						<div class="artist-meta">
-							<h2 class="page-title">Billie Eilish</h2>
-							<span class="subtitle">Artist Analytics</span>
-						</div>
-					</div>
-
-					<div class="user">Billie Eilish</div>
+				<div class="search-box">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<circle cx="11" cy="11" r="8"></circle>
+						<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+					</svg>
+					<input type="text" placeholder="Search tracks or stats..." />
 				</div>
-
-				<div class="top-bar-row bottom">
-					<span class="range">Last 30 Days ▾</span>
-					<span class="meta">Updated 2 hours ago</span>
+				<div class="top-actions">
+					<button class="date-selector">Last 30 Days ▾</button>
+					<div class="user-profile">
+						<div class="user-info">
+							<span class="name">Billie Eilish</span>
+							<span class="role">Artist Account</span>
+						</div>
+						<img src="assets/billie.jpg" alt="Profile" />
+					</div>
 				</div>
 			</div>
+
 			<div id="content">
-				<div class="main">
-					<div class="overview">
-						<h2>Overview (Last 30 Days)</h2>
-						<div class="stats">
-							<div class="card" id="monthly-streams">
-								<h3>480M</h3>
-								<p>Monthly<br />Streams</p>
-								<p class="delta positive">▲ 6.8%</p>
-							</div>
-							<div class="card" id="listeners">
-								<h3>92M</h3>
-								<p>
-									Monthly <br />
-									Listeners
-								</p>
-								<p class="delta positive">▲ 1.9%</p>
-							</div>
-							<div class="card" id="followers">
-								<h3>1.2M</h3>
-								<p>
-									New <br />
-									Followers
-								</p>
-								<p class="delta positive">▲ 3.4%</p>
-							</div>
-							<div class="card" id="revenue">
-								<h3>$1.1M</h3>
-								<p>
-									Estimated <br />
-									Revenue
-								</p>
-								<p class="delta positive">▲ 4.2%</p>
-							</div>
+				<div class="overview">
+					<h2>Overview (Last 30 Days)</h2>
+					<div class="stats">
+						<div class="card">
+							<h3>480M</h3>
+							<p>Monthly Streams</p>
+							<p class="delta positive">▲ 6.8%</p>
+						</div>
+						<div class="card">
+							<h3>92M</h3>
+							<p>Monthly Listeners</p>
+							<p class="delta positive">▲ 1.9%</p>
+						</div>
+						<div class="card">
+							<h3>1.2M</h3>
+							<p>New Followers</p>
+							<p class="delta positive">▲ 3.4%</p>
+						</div>
+						<div class="card">
+							<h3>$1.1M</h3>
+							<p>Estimated Revenue</p>
+							<p class="delta positive">▲ 4.2%</p>
 						</div>
 					</div>
+				</div>
+
+				<div class="main">
 					<div class="streams">
 						<h2>Streams Over Time (In Millions)</h2>
 						<div class="chart">
 							<canvas id="streamsChart"></canvas>
 						</div>
 					</div>
-					<div class="platform">
-						<h2>Platform Breakdown</h2>
-						<div class="donut">
-							<canvas id="platformChart"></canvas>
-						</div>
-					</div>
+
 					<div class="top-tracks">
 						<h2>Top Tracks</h2>
 						<table class="tracks-table">
 							<thead>
 								<tr>
+									<th style="width: 50px">#</th>
 									<th>Track</th>
 									<th>Streams</th>
 									<th>Growth</th>
@@ -105,26 +242,31 @@
 							</thead>
 							<tbody>
 								<tr>
+									<td>01</td>
 									<td class="track-name">Birds of a Feather</td>
 									<td class="track-streams">96.2M</td>
 									<td class="positive">▲ 5.1%</td>
 								</tr>
 								<tr>
+									<td>02</td>
 									<td class="track-name">What Was I Made For?</td>
 									<td class="track-streams">81.4M</td>
 									<td class="positive">▲ 3.8%</td>
 								</tr>
 								<tr>
+									<td>03</td>
 									<td class="track-name">Happier Than Ever</td>
 									<td class="track-streams">74.9M</td>
 									<td class="negative">▼ 1.2%</td>
 								</tr>
 								<tr>
+									<td>04</td>
 									<td class="track-name">Bad Guy</td>
 									<td class="track-streams">62.7M</td>
 									<td class="positive">▲ 0.9%</td>
 								</tr>
 								<tr>
+									<td>05</td>
 									<td class="track-name">Therefore I Am</td>
 									<td class="track-streams">58.3M</td>
 									<td class="positive">▲ 2.4%</td>
@@ -133,10 +275,10 @@
 						</table>
 					</div>
 				</div>
+
 				<div class="side">
 					<div class="alerts">
 						<h2>Alerts</h2>
-
 						<div class="alert-list">
 							<div class="alert positive">
 								<span class="alert-icon">▲</span>
@@ -145,7 +287,6 @@
 									<span class="alert-meta">3 days ago</span>
 								</div>
 							</div>
-
 							<div class="alert positive">
 								<span class="alert-icon">▲</span>
 								<div class="alert-content">
@@ -153,7 +294,6 @@
 									<span class="alert-meta">Last week</span>
 								</div>
 							</div>
-
 							<div class="alert negative">
 								<span class="alert-icon">▼</span>
 								<div class="alert-content">
@@ -161,6 +301,13 @@
 									<span class="alert-meta">Needs attention</span>
 								</div>
 							</div>
+						</div>
+					</div>
+
+					<div class="platform">
+						<h2>Platform Breakdown</h2>
+						<div class="donut">
+							<canvas id="platformChart"></canvas>
 						</div>
 					</div>
 				</div>
