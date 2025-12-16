@@ -8,39 +8,165 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="sidebar"></div>
-			<div id="topbar"></div>
+			<div id="sidebar">
+				<div class="brand">
+					<h1>Billie Eilish</h1>
+					<p>Artist Analytics</p>
+				</div>
+
+				<nav class="nav">
+					<a class="nav-item active">Dashboard</a>
+					<a class="nav-item">Analytics</a>
+					<a class="nav-item">Tracks</a>
+					<a class="nav-item">Audience</a>
+					<a class="nav-item">Revenue</a>
+				</nav>
+
+				<div class="sidebar-footer">
+					<a class="nav-item">Settings</a>
+					<a class="nav-item">Help</a>
+				</div>
+			</div>
+			<div id="top-bar">
+				<div class="top-bar-row top">
+					<div class="artist">
+						<img src="assets/billie.jpg" alt="Billie Eilish" />
+						<div class="artist-meta">
+							<h2 class="page-title">Billie Eilish</h2>
+							<span class="subtitle">Artist Analytics</span>
+						</div>
+					</div>
+
+					<div class="user">Billie Eilish</div>
+				</div>
+
+				<div class="top-bar-row bottom">
+					<span class="range">Last 30 Days ▾</span>
+					<span class="meta">Updated 2 hours ago</span>
+				</div>
+			</div>
 			<div id="content">
 				<div class="main">
 					<div class="overview">
-						<h2>Overview</h2>
+						<h2>Overview (Last 30 Days)</h2>
 						<div class="stats">
-							<div class="card" id="monthly-streams"></div>
-							<div class="card" id="listeners"></div>
-							<div class="card" id="followers"></div>
-							<div class="card" id="revenue"></div>
+							<div class="card" id="monthly-streams">
+								<h3>480M</h3>
+								<p>Monthly<br />Streams</p>
+								<p class="delta positive">▲ 6.8%</p>
+							</div>
+							<div class="card" id="listeners">
+								<h3>92M</h3>
+								<p>
+									Monthly <br />
+									Listeners
+								</p>
+								<p class="delta positive">▲ 1.9%</p>
+							</div>
+							<div class="card" id="followers">
+								<h3>1.2M</h3>
+								<p>
+									New <br />
+									Followers
+								</p>
+								<p class="delta positive">▲ 3.4%</p>
+							</div>
+							<div class="card" id="revenue">
+								<h3>$1.1M</h3>
+								<p>
+									Estimated <br />
+									Revenue
+								</p>
+								<p class="delta positive">▲ 4.2%</p>
+							</div>
 						</div>
 					</div>
 					<div class="streams">
-						<h2>Streams Over Time</h2>
-						<div class="chart"></div>
+						<h2>Streams Over Time (In Millions)</h2>
+						<div class="chart">
+							<canvas id="streamsChart"></canvas>
+						</div>
 					</div>
 					<div class="platform">
 						<h2>Platform Breakdown</h2>
-						<div class="donut"></div>
+						<div class="donut">
+							<canvas id="platformChart"></canvas>
+						</div>
 					</div>
 					<div class="top-tracks">
 						<h2>Top Tracks</h2>
-						<div class="Tracks"></div>
+						<table class="tracks-table">
+							<thead>
+								<tr>
+									<th>Track</th>
+									<th>Streams</th>
+									<th>Growth</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="track-name">Birds of a Feather</td>
+									<td class="track-streams">96.2M</td>
+									<td class="positive">▲ 5.1%</td>
+								</tr>
+								<tr>
+									<td class="track-name">What Was I Made For?</td>
+									<td class="track-streams">81.4M</td>
+									<td class="positive">▲ 3.8%</td>
+								</tr>
+								<tr>
+									<td class="track-name">Happier Than Ever</td>
+									<td class="track-streams">74.9M</td>
+									<td class="negative">▼ 1.2%</td>
+								</tr>
+								<tr>
+									<td class="track-name">Bad Guy</td>
+									<td class="track-streams">62.7M</td>
+									<td class="positive">▲ 0.9%</td>
+								</tr>
+								<tr>
+									<td class="track-name">Therefore I Am</td>
+									<td class="track-streams">58.3M</td>
+									<td class="positive">▲ 2.4%</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 				<div class="side">
 					<div class="alerts">
 						<h2>Alerts</h2>
-						<div class="alert-list"></div>
+
+						<div class="alert-list">
+							<div class="alert positive">
+								<span class="alert-icon">▲</span>
+								<div class="alert-content">
+									<p class="alert-title">Streams boosted by playlist add</p>
+									<span class="alert-meta">3 days ago</span>
+								</div>
+							</div>
+
+							<div class="alert positive">
+								<span class="alert-icon">▲</span>
+								<div class="alert-content">
+									<p class="alert-title">YouTube engagement up 8%</p>
+									<span class="alert-meta">Last week</span>
+								</div>
+							</div>
+
+							<div class="alert negative">
+								<span class="alert-icon">▼</span>
+								<div class="alert-content">
+									<p class="alert-title">One track losing momentum</p>
+									<span class="alert-meta">Needs attention</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
