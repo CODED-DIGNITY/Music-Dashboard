@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			const meta = chart.getDatasetMeta(0);
 
 			const iconPaths = [
-				"/icons/spotify.svg",
-				"/icons/youtube.svg",
-				"/icons/apple.svg",
-				"/icons/other.svg",
+				"icons/spotify.svg",
+				"icons/youtube.svg",
+				"icons/apple.svg",
+				"icons/other.svg",
 			];
 
 			const iconSize = 18;
